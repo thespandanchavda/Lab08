@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/reset.css">
+        <title>Simple Responsive Design</title>
+
+        <style>
+            body {
+                max-width: 1280px;
+                margin: 0 auto;
+            }
+
+            header {
+                text-align: center;
+                margin-bottom: 1em;
+            }
+
+            h1 {
+                font-size: 3.4em;
+            }
+
+            h2 {
+                font-size: 2.1em;
+            }
+
+            .content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 5%;
+            }
+
+            main {
+                width: 65%;
+                order: 2;
+            }
+
+            aside {
+                width: 25%;
+                min-width: 300px;
+                order: 1;
+            }
+
+            @media screen and (max-width: 1020px){
+                main { order: 1 }
+                aside { order: 2 }
+            }
+
+            table {
+                margin-top: 1em;
+                width: 100%;
+            }
+
+            table, tr, th, td {
+                border: 1px solid #333;
+            }
+
+            th, td {
+                padding: 1em;
+            }            
+
+            main figure {
+                float: left;
+                margin-right: 1em;
+            }
+
+            footer {
+                margin-top: 1em;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>Lorem Ipsum</h1>
+            <h2>Lorem, ipsum dolor.</h2>
+        </header>
+
+        <div class="content">
+            <main>
+                <figure>
+                    <img src="./images/200x200.png" alt="Placeholder">
+                </figure>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At voluptate, rem tenetur molestiae ducimus blanditiis, in error reiciendis tempora unde voluptatum? Quasi fugiat amet, perferendis repellendus enim similique nihil voluptate harum illum tenetur aspernatur animi officiis, distinctio accusamus? Iusto eveniet quisquam sunt minima maiores possimus, consequuntur consectetur deleniti hic omnis?</p>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At voluptate, rem tenetur molestiae ducimus blanditiis, in error reiciendis tempora unde voluptatum? Quasi fugiat amet, perferendis repellendus enim similique nihil voluptate harum illum tenetur aspernatur animi officiis, distinctio accusamus? Iusto eveniet quisquam sunt minima maiores possimus, consequuntur consectetur deleniti hic omnis?</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Lorem</th>
+                            <th>Ipsum</th>
+                            <th>Dolor</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum dolor sit.</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cumque fugiat? Nemo possimus voluptatum impedit?</td>
+                            <td>TRUE</td>
+                            <td>Jan 12, 2002</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit.</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cumque fugiat? Nemo possimus voluptatum impedit?</td>
+                            <td>TRUE</td>
+                            <td>Jan 12, 2002</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit.</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cumque fugiat? Nemo possimus voluptatum impedit?</td>
+                            <td>TRUE</td>
+                            <td>Jan 12, 2002</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit.</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cumque fugiat? Nemo possimus voluptatum impedit?</td>
+                            <td>TRUE</td>
+                            <td>Jan 12, 2002</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit.</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, cumque fugiat? Nemo possimus voluptatum impedit?</td>
+                            <td>TRUE</td>
+                            <td>Jan 12, 2002</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+
+            <aside>
+                <article>
+                    <h2>Lorem Ipsum Cont.</h2>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolor inventore ab, repellendus expedita accusantium cupiditate soluta consequatur? Porro, reiciendis!</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dolor inventore ab, repellendus expedita accusantium cupiditate soluta consequatur? Porro, reiciendis!</p>
+                </article>
+            </aside>
+        </div>
+
+        <footer>
+            <p>&copy;2022 Shaun McKinnon</p>
+        </footer>
+    </body>
+</html>
